@@ -8,7 +8,7 @@ public class Rotator : MonoBehaviour
     private const Ease EaseLinear = Ease.Linear;
 
     [SerializeField] private float _duration;
-    [SerializeField] private Vector3 _tardetPosition;
+    [SerializeField] private Vector3 _tardetRotation;
 
     private void Start()
     {
@@ -17,7 +17,7 @@ public class Rotator : MonoBehaviour
 
     private void Rotate()
     {
-        transform.DORotate(_tardetPosition, _duration)
+        transform.DORotate(_tardetRotation, _duration)
             .SetLoops(Repetitions, LoopTypeRestart)
             .SetEase(EaseLinear);
     }

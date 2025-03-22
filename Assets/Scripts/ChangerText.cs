@@ -4,9 +4,7 @@ using UnityEngine.UI;
 
 public class ChangerText : MonoBehaviour
 {
-    private const LoopType LoopTypeRestart = LoopType.Restart;
     private const int Repetitions = -1;
-    private const Ease EaseLinear = Ease.Linear;
 
     [SerializeField] private float _duration;
     [SerializeField] private Text _text;
